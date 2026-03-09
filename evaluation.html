@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domus Ethica | Detalhes do Imóvel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="menu-container">
+        <ul class="nav-links-mobile">
+            <li><a href="#services" data-translate="nav_services">Serviços</a></li>
+            <li><a href="#about" data-translate="nav_about">Quem Somos?</a></li>
+            <li><a href="#properties" data-translate="nav_properties">Imóveis</a></li>
+            <li><a href="#faqs" data-translate="nav_faqs">FAQs</a></li>
+            <li><a href="#contact" data-translate="nav_contact">Contactos</a></li>
+
+            <div class="lang-switch-container-mobile">
+                <div class="lang-nav">
+                    <button onclick="toggleLanguage('pt')" class="lang-option pt-btn active">PT</button>
+                    <button onclick="toggleLanguage('en')" class="lang-option en-btn">EN</button>
+                    <div class="lang-slider"></div>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <nav class="navbar nav-solid">
+        <div class="navbar-container">
+            <a href="index.html#hero">
+                <img src="assets/logo.svg" alt="logo" class="logo" />
+            </a>
+            <div class="lang-switch-container">
+                <div class="lang-nav">
+                    <button onclick="toggleLanguage('pt')" class="lang-option pt-btn active">PT</button>
+                    <button onclick="toggleLanguage('en')" class="lang-option en-btn">EN</button>
+                    <div class="lang-slider"></div>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#services" data-translate="nav_services">Serviços</a></li>
+                <li><a href="index.html#about" data-translate="nav_about">Quem Somos?</a></li>
+                <li><a href="index.html#properties" data-translate="nav_properties">Imóveis</a></li>
+                <li><a href="index.html#faqs" data-translate="nav_faqs">FAQs</a></li>
+                <li><a href="index.html#contact" data-translate="nav_contact">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="form-section">
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-fill"></div>
+            </div>
+
+            <div id="form-container" class="form-card">
+            </div>
+        </section>
+    </main>
+
+
+    <div class="back-navigation">
+        <a href="index.html#evaluation" class="back-link" data-translate="back_link2">← Voltar para a página
+            principal</a>
+    </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.svg" alt="Domus Ethica" class="footer-logo">
+            </div>
+
+            <div class="footer-links">
+                <h5 data-translate="footer_links">Links rápidos</h5>
+                <div class="links-grid">
+                    <div class="link-column">
+                        <a href="#services" data-translate="nav_services">Serviços</a>
+                        <a href="#about" data-translate="nav_about">Quem Somos?</a>
+                        <a href="#properties" data-translate="nav_properties">Imóveis</a>
+                    </div>
+
+                    <div class="link-column">
+                        <a href="#faqs" data-translate="nav_faqs">FAQs</a>
+                        <a href="#contact" data-translate="nav_contact">Contactos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p data-translate="footer_copy">© 2026 Domus Ethica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/dictionary.js"></script>
+    <script src="js/evaluation.js"></script>
+
+    <script src="js/lang-change.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

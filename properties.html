@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domus Ethica | Detalhes do Imóvel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="menu-container">
+        <ul class="nav-links-mobile">
+            <li><a href="#services" data-translate="nav_services">Serviços</a></li>
+            <li><a href="#about" data-translate="nav_about">Quem Somos?</a></li>
+            <li><a href="#properties" data-translate="nav_properties">Imóveis</a></li>
+            <li><a href="#faqs" data-translate="nav_faqs">FAQs</a></li>
+            <li><a href="#contact" data-translate="nav_contact">Contactos</a></li>
+
+            <div class="lang-switch-container-mobile">
+                <div class="lang-nav">
+                    <button onclick="toggleLanguage('pt')" class="lang-option pt-btn active">PT</button>
+                    <button onclick="toggleLanguage('en')" class="lang-option en-btn">EN</button>
+                    <div class="lang-slider"></div>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <nav class="navbar nav-solid">
+        <div class="navbar-container">
+            <a href="index.html#hero">
+                <img src="assets/logo.svg" alt="logo" class="logo" />
+            </a>
+            <div class="lang-switch-container">
+                <div class="lang-nav">
+                    <button onclick="toggleLanguage('pt')" class="lang-option pt-btn active">PT</button>
+                    <button onclick="toggleLanguage('en')" class="lang-option en-btn">EN</button>
+                    <div class="lang-slider"></div>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#services" data-translate="nav_services">Serviços</a></li>
+                <li><a href="index.html#about" data-translate="nav_about">Quem Somos?</a></li>
+                <li><a href="index.html#properties" data-translate="nav_properties">Imóveis</a></li>
+                <li><a href="index.html#faqs" data-translate="nav_faqs">FAQs</a></li>
+                <li><a href="index.html#contact" data-translate="nav_contact">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="properties-page-section" id="properties">
+        <div class="section-header">
+            <div class="section-title">
+                <h2 data-translate="prop_title2">Descubra Todos os Nossos Imóveis</h2>
+            </div>
+        </div>
+        <div class="properties-filter-container">
+            <div class="filter-wrapper">
+                <div class="filter-row">
+                    <div class="select-wrapper">
+                        <select id="status-filter">
+                            <option value="all" data-translate="buy_rent_filter">Comprar ou Alugar</option>
+                            <option value="Buy" data-translate="buy_filter">Comprar</option>
+                            <option value="Rent" data-translate="rent_filter">Alugar</option>
+                        </select>
+                    </div>
+                    <div class="select-wrapper">
+                        <select id="property-type-filter">
+                            <option value="all" data-translate="type_all_filter">Tipo de Imóvel</option>
+                            <option value="Apartment" data-translate="type_apartment_filter">Apartamento</option>
+                            <option value="House" data-translate="type_house_filter">Moradia</option>
+                            <option value="Land" data-translate="type_land_filter">Terreno</option>
+                            <option value="Estate" data-translate="type_estate_filter">Quinta / Herdade</option>
+                        </select>
+                    </div>
+                    <input type="text" id="search-input" placeholder="Localização (Cidade, Rua...)"
+                        data-translate-placeholder="location_filter">
+                </div>
+
+                <div class="filter-row">
+                    <div class="min-max-filter">
+                        <input type="number" id="min-price" placeholder="Preço Mín (€)"
+                            data-translate-placeholder="min_price_filter">
+                        <input type="number" id="max-price" placeholder="Preço Máx (€)"
+                            data-translate-placeholder="max_price_filter">
+                    </div>
+                </div>
+
+                <div class="filter-row">
+                    <div class="select-wrapper">
+                        <select id="bedrooms-filter">
+                            <option value="all" data-translate="rooms_filter">Quartos</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4+</option>
+                        </select>
+                    </div>
+                    <div class="select-wrapper">
+                        <select id="bathrooms-filter">
+                            <option value="all" data-translate="baths_filter">Casas de Banho</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter-row">
+                    <div class="min-max-filter">
+                        <input type="number" id="min-area" placeholder="Área Mín (m²)" data-translate-placeholder="min_area_filter">
+                        <input type="number" id="max-area" placeholder="Área Máx (m²)" data-translate-placeholder="max_area_filter">
+                    </div>
+                </div>
+
+                <div class="filter-row">
+                    <div class="select-wrapper">
+                        <select id="energy-filter">
+                            <option value="all" data-translate="energy_filter">Certificação Energética</option>
+                            <option value="A">A / A+</option>
+                            <option value="B">B</option>
+                            <option value="C">C ou inferior</option>
+                        </select>
+                    </div>
+                    <div class="select-wrapper">
+                        <select id="parking-filter">
+                            <option value="all" data-translate="parking_filter">Estacionamento?</option>
+                            <option value="yes" data-translate="yes_parking_filter">Sim</option>
+                            <option value="no" data-translate="no_parking_filter">Não</option>
+                        </select>
+                    </div>
+                    <div class="select-wrapper">
+                        <select id="price-sort">
+                            <option value="default" data-translate="price_range_all_filter">Ordenar por...</option>
+                            <option value="low-high" data-translate="price_range_low_filter">Mais barato</option>
+                            <option value="high-low" data-translate="price_range_high_filter">Mais caro</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-actions">
+                <button id="clear-filters-btn" class="clear-btn" data-translate="clear_filter">Limpar Filtros</button>
+            </div>
+        </div>
+        <div class="properties-grid" id="properties-container"></div>
+
+        <div class="back-navigation">
+            <a href="index.html#properties" class="back-link" data-translate="back_link2">← Voltar para a página
+                principal</a>
+        </div>
+
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.svg" alt="Domus Ethica" class="footer-logo">
+            </div>
+
+            <div class="footer-links">
+                <h5 data-translate="footer_links">Links rápidos</h5>
+                <div class="links-grid">
+                    <div class="link-column">
+                        <a href="#services" data-translate="nav_services">Serviços</a>
+                        <a href="#about" data-translate="nav_about">Quem Somos?</a>
+                        <a href="#properties" data-translate="nav_properties">Imóveis</a>
+                    </div>
+
+                    <div class="link-column">
+                        <a href="#faqs" data-translate="nav_faqs">FAQs</a>
+                        <a href="#contact" data-translate="nav_contact">Contactos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-translate="footer_copy">© 2026 Domus Ethica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/properties.js"></script>
+    <script src="js/property-details-data.js"></script>
+    <script src="js/dictionary.js"></script>
+
+    <script src="js/lang-change.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

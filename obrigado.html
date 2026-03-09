@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Enviada | Domus Ethica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .thanks-wrapper {
+            background-color: var(--bg-dark);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--s-md);
+            color: var(--white);
+        }
+
+        .thanks-logo {
+            width: 350px;
+            margin-bottom: var(--s-xl);
+        }
+
+        .thanks-content h1 {
+            font-size: var(--fs-lg);
+            margin-bottom: var(--s-sm);
+        }
+
+        .thanks-content p {
+            font-size: var(--fs-md);
+            opacity: 0.8;
+            margin-bottom: var(--s-lg);
+            max-width: 500px;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            background-color: var(--white);
+            color: var(--black);
+            padding: var(--s-sm) var(--s-lg);
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+            background-color: var(--light-grey);
+        }
+    </style>
+</head>
+<body>
+
+    <main class="thanks-wrapper">
+        <img src="assets/logo.svg" alt="Domus Ethica Logo" class="thanks-logo">
+
+        <div class="thanks-content">
+            <h1>Mensagem Enviada!</h1>
+            <p>Obrigado pelo seu contacto. A nossa equipa irá analisar o seu pedido e entraremos em contacto muito em breve.</p>
+            
+            <a href="index.html" class="back-button">
+                Voltar ao Início
+            </a>
+        </div>
+    </main>
+    
+    <script src="js/dictionary.js"></script>
+    <script src="js/lang-change.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

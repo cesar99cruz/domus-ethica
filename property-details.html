@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domus Ethica | Detalhes do Imóvel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="menu-container">
+        <ul class="nav-links-mobile">
+            <li><a href="#services" data-translate="nav_services">Serviços</a></li>
+            <li><a href="#about" data-translate="nav_about">Quem Somos?</a></li>
+            <li><a href="#properties" data-translate="nav_properties">Imóveis</a></li>
+            <li><a href="#faqs" data-translate="nav_faqs">FAQs</a></li>
+            <li><a href="#contact" data-translate="nav_contact">Contactos</a></li>
+
+            <div class="lang-switch-container-mobile">
+                <div class="lang-nav">
+                    <button onclick="toggleLanguage('pt')" class="lang-option pt-btn active">PT</button>
+                    <button onclick="toggleLanguage('en')" class="lang-option en-btn">EN</button>
+                    <div class="lang-slider"></div>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <nav class="navbar nav-solid">
+        <div class="navbar-container">
+            <a href="index.html#hero">
+                <img src="assets/logo.svg" alt="logo" class="logo" />
+            </a>
+            <div class="lang-switch-container">
+                <div class="lang-nav">
+                    <button onclick="toggleLanguage('pt')" class="lang-option pt-btn active">PT</button>
+                    <button onclick="toggleLanguage('en')" class="lang-option en-btn">EN</button>
+                    <div class="lang-slider"></div>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#services" data-translate="nav_services">Serviços</a></li>
+                <li><a href="index.html#about" data-translate="nav_about">Quem Somos?</a></li>
+                <li><a href="index.html#properties" data-translate="nav_properties">Imóveis</a></li>
+                <li><a href="index.html#faqs" data-translate="nav_faqs">FAQs</a></li>
+                <li><a href="index.html#contact" data-translate="nav_contact">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="property-details-page">
+        <section class="details-gallery">
+            <button class="gallery-prev-btn" onclick="changePhoto(-1)">
+                <img src="assets/chevron-left.svg" alt="Previous">
+            </button>
+
+            <button class="gallery-next-btn" onclick="changePhoto(1)">
+                <img src="assets/chevron-right.svg" alt="Next">
+            </button>
+
+            <div class="gallery-main" id="main-photo-container">
+            </div>
+            <div class="gallery-side" id="side-photos-container">
+            </div>
+        </section>
+
+        <section class="details-body">
+            <div class="details-main-info">
+                <div class="details-header">
+                    <h1 id="details-title"></h1>
+                    <div class="location-wrapper">
+                        <img src="assets/pin-house.svg" alt="icon">
+                        <p id="details-location" class="location-text"></p>
+                    </div>
+
+                    <div id="details-price" class="price-large"></div>
+                </div>
+
+                <div class="description-section">
+                    <h4 data-translate="description">Descrição</h4>
+                    <div id="details-description"></div>
+                </div>
+                <div class="features-wrapper">
+                    <h4 data-translate="amenities">Comodidades</h4>
+                    <hr>
+                    <div class="features-row" id="features-row"></div>
+                </div>
+                <div class="specs-table-section">
+                    <h4 data-translate="details_property">Detalhes do Imóvel</h4>
+                    <hr id="first-hr">
+                    <div id="areas-lot-container"></div>
+                </div>
+            </div>
+
+            <aside class="details-sidebar">
+                <div class="agent-card">
+                    <div class="agent-photo">
+                        <img src="assets/imgs/ana-anastacio-foto.jpg" alt="Consultora Imobiliária">
+                    </div>
+                    <div class="agent-info">
+                        <h3>Ana Sofia Anastácio</h3>
+                        <p data-translate="agent_type">Consultora Imobiliária</p>
+                        <hr>
+                        <div class="agent-contacts">
+                            <a href="mailto:domusethica@gmail.com" class="agent-btn" data-translate="agent_btn">Enviar
+                                Email</a>
+                            <a href="https://wa.me/351936201597" class="agent-btn whatsapp">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </section>
+
+        <div class="back-navigation">
+            <a href="index.html#properties" class="back-link" data-translate="back_link">← Voltar para as
+                propriedades</a>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.svg" alt="Domus Ethica" class="footer-logo">
+            </div>
+
+            <div class="footer-links">
+                <h5 data-translate="footer_links">Links rápidos</h5>
+                <div class="links-grid">
+                    <div class="link-column">
+                        <a href="#services" data-translate="nav_services">Serviços</a>
+                        <a href="#about" data-translate="nav_about">Quem Somos?</a>
+                        <a href="#properties" data-translate="nav_properties">Imóveis</a>
+                    </div>
+
+                    <div class="link-column">
+                        <a href="#faqs" data-translate="nav_faqs">FAQs</a>
+                        <a href="#contact" data-translate="nav_contact">Contactos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-translate="footer_copy">© 2026 Domus Ethica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/properties.js"></script>
+    <script src="js/property-details-data.js"></script>
+    <script src="js/dictionary.js"></script>
+
+    <script src="js/lang-change.js"></script>
+    <script src="js/details.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

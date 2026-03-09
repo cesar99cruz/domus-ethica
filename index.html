@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Domus Ethica</title>
+</head>
+
+<body>
+    <div class="menu-container">
+        <ul class="nav-links-mobile">
+            <li><a href="#services" data-translate="nav_services">Serviços</a></li>
+            <li><a href="#about" data-translate="nav_about">Quem Somos?</a></li>
+            <li><a href="#properties" data-translate="nav_properties">Imóveis</a></li>
+            <li><a href="#faqs" data-translate="nav_faqs">FAQs</a></li>
+            <li><a href="#contact" data-translate="nav_contact">Contactos</a></li>
+
+            <div class="lang-switch-container-mobile">
+                <div class="lang-nav">
+                    <button onclick="toggleLanguage('pt')" class="lang-option pt-btn active">PT</button>
+                    <button onclick="toggleLanguage('en')" class="lang-option en-btn">EN</button>
+                    <div class="lang-slider"></div>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <section class="hero" id="hero">
+        <div class="hero-wrapper">
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <a href="#hero">
+                        <img src="assets/logo.svg" alt="logo" class="logo" />
+                    </a>
+                    <div class="lang-switch-container">
+                        <div class="lang-nav">
+                            <button onclick="toggleLanguage('pt')" class="lang-option pt-btn active">PT</button>
+                            <button onclick="toggleLanguage('en')" class="lang-option en-btn">EN</button>
+                            <div class="lang-slider"></div>
+                        </div>
+                    </div>
+
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="nav-links">
+                        <li><a href="#services" data-translate="nav_services">Serviços</a></li>
+                        <li><a href="#about" data-translate="nav_about">Quem Somos?</a></li>
+                        <li><a href="#properties" data-translate="nav_properties">Imóveis</a></li>
+                        <li><a href="#faqs" data-translate="nav_faqs">FAQs</a></li>
+                        <li><a href="#contact" data-translate="nav_contact">Contactos</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="hero-contents">
+                <div class="hero-text">
+                    <h1 data-translate="hero_h1">Consultoria Imobiliária de Confiança.</h1>
+                    <p data-translate="hero_p">Experiência, clareza e acompanhamento em cada etapa do processo.</p>
+
+                    <a href="#contact" class="hero-button">
+                        <span data-translate="hero_btn">Falar com um consultor</span>
+                        <div class="icon-container">
+                            <img src="assets/move-right.svg" alt="arrow-icon" />
+                        </div>
+                    </a>
+                </div>
+                <div class="hero-image-container">
+                    <img src="assets/imgs/hero-image.png" alt="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services-section" id="services">
+        <div class="section-header">
+            <div class="section-tag">
+                <h6 data-translate="services_tag">Serviços</h6>
+            </div>
+
+            <div class="section-title">
+                <h2 data-translate="services_title">O Que Nos Diferencia</h2>
+                <p data-translate="services_desc">Descubra qual dos nossos serviços se adequa às suas necessidades.</p>
+            </div>
+        </div>
+        <div class="services-grid">
+            <div class="service-container">
+                <div class="service-top">
+                    <div class="service-icon-container">
+                        <img src="assets/service-1.svg" alt="service-icon">
+                    </div>
+                </div>
+                <div class="service-bottom">
+                    <h4 data-translate="service_1_h">Mediação Imobiliária</h4>
+                    <p data-translate="service_1_p">Acompanhamento profissional na compra, venda ou arrendamento de
+                        imóveis, com foco na
+                        transparência, no rigor e nas decisões bem informadas.</p>
+                </div>
+            </div>
+            <div class="service-container">
+                <div class="service-top">
+                    <div class="service-icon-container">
+                        <img src="assets/service-2.svg" alt="service-icon">
+                    </div>
+                </div>
+                <div class="service-bottom">
+                    <h4 data-translate="service_2_h">Domótica</h4>
+                    <p data-translate="service_2_p">Integração de soluções tecnológicas que tornam a casa mais
+                        eficiente, confortável e funcional,
+                        adaptadas às necessidades de cada imóvel.</p>
+                </div>
+            </div>
+            <div class="service-container">
+                <div class="service-top">
+                    <div class="service-icon-container">
+                        <img src="assets/service-3.svg" alt="service-icon">
+                    </div>
+                </div>
+                <div class="service-bottom">
+                    <h4 data-translate="service_3_h">Limpeza Especializada</h4>
+                    <p data-translate="service_3_p">Serviços de limpeza profunda e higienização, pensados para garantir
+                        conforto, bem-estar e
+                        tranquilidade no dia a dia.</p>
+                </div>
+            </div>
+            <div class="service-container">
+                <div class="service-top">
+                    <div class="service-icon-container">
+                        <img src="assets/service-4.svg" alt="service-icon">
+                    </div>
+                </div>
+                <div class="service-bottom">
+                    <h4 data-translate="service_4_h">Manutenção de Imóveis</h4>
+                    <p data-translate="service_4_p">Apoio contínuo na manutenção e pequenas reparações, assegurando o
+                        bom estado e a valorização do
+                        imóvel ao longo do tempo.</p>
+                </div>
+            </div>
+            <div class="service-container">
+                <div class="service-top">
+                    <div class="service-icon-container">
+                        <img src="assets/service-5.svg" alt="service-icon">
+                    </div>
+                </div>
+                <div class="service-bottom">
+                    <h4 data-translate="service_5_h">Design de Interiores</h4>
+                    <p data-translate="service_5_p">Apoio na organização e valorização dos espaços interiores, com
+                        soluções funcionais e ajustadas ao
+                        estilo e necessidades de cada cliente.</p>
+                </div>
+            </div>
+            <div class="service-container">
+                <div class="service-top">
+                    <div class="service-icon-container">
+                        <img src="assets/service-6.svg" alt="service-icon">
+                    </div>
+                </div>
+                <div class="service-bottom">
+                    <h4 data-translate="service_6_h">Consultoria Imobiliária</h4>
+                    <p data-translate="service_6_p">Acompanhamento estratégico em decisões imobiliárias, com foco na
+                        valorização, no contexto do
+                        mercado e nas necessidades de cada cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section" id="about">
+        <div class="about-text">
+            <div class="left-container">
+                <div class="section-tag">
+                    <h6 data-translate="about_tag">Quem Somos?</h6>
+                </div>
+
+                <div class="section-title">
+                    <h2 data-translate="about_title">Especialistas
+                        em Imobiliário</h2>
+                </div>
+            </div>
+
+            <div class="right-container">
+                <div class="about-pgh">
+                    <p data-translate="about_p">A Domus Ethica nasce de uma sólida experiência no setor imobiliário e de
+                        uma forma de trabalhar
+                        assente na confiança, no rigor e na atenção ao detalhe. Acompanhamos cada decisão de forma
+                        próxima e transparente, adaptando o nosso trabalho às necessidades específicas de cada cliente e
+                        de cada imóvel.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-img">
+            <img src="assets/imgs/about-img.png" alt="about-img" />
+        </div>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h2><span class="count" data-target="8">0</span>+</h2>
+                <h4 data-translate="stat_1_h">Anos no Setor</h4>
+                <p data-translate="stat_1_p">Experiência que reduz risco e incerteza.</p>
+            </div>
+            <div class="stat-item">
+                <h2><span class="count" data-target="311">0</span>+</h2>
+                <h4 data-translate="stat_2_h">Processos Concluídos</h4>
+                <p data-translate="stat_2_p">Negociações conduzidas com transparência.</p>
+            </div>
+            <div class="stat-item">
+                <h2><span class="count" data-target="100">0</span>%</h2>
+                <h4 data-translate="stat_3_h">Foco No Cliente</h4>
+                <p data-translate="stat_3_p">Acompanhamento do início ao fim.</p>
+            </div>
+            <div class="stat-item">
+                <h2><span class="count" data-target="360">0</span>°</h2>
+                <h4 data-translate="stat_4_h">Visão do Imóvel</h4>
+                <p data-translate="stat_4_p">Análise completa antes de qualquer decisão.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="properties-section" id="properties">
+        <div class="section-header">
+            <div class="section-tag">
+                <h6 data-translate="prop_tag">Imóveis</h6>
+            </div>
+
+            <div class="section-title">
+                <h2 data-translate="prop_title">A Sua Próxima Casa Começa Aqui</h2>
+                <p data-translate="prop_desc">Encontramos imóveis que fazem sentido para hoje e para o futuro.</p>
+            </div>
+        </div>
+        <div class="properties-grid" id="properties-container"></div>
+        <div>
+            <a href="properties.html" class="properties-button">
+                <span data-translate="prop_btn">Mais propriedades</span>
+                <div class="properties-icon-container">
+                    <img src="assets/move-right.svg" alt="arrow-icon" />
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="evaluation-section" id="evaluation">
+        <div class="section-header">
+            <div class="section-tag">
+                <h6 data-translate="eval_tag">Avaliação</h6>
+            </div>
+
+            <div class="section-title">
+                <h2 data-translate="eval_title">Descubra quanto vale a sua casa</h2>
+                <p data-translate="eval_desc">Veja quanto vale a sua casa aqui, de forma gratuita!</p>
+            </div>
+        </div>
+
+        <div class="evaluation-grid">
+            <div class="evaluation-img-container">
+                <img src="assets/imgs/how-much-home.jpg" alt="Interior">
+            </div>
+
+            <div class="evaluation-card">
+                <h3 data-translate="eval_card_h">Pretende Vender o seu Imóvel?</h3>
+                <p data-translate="eval_card_p">Receba a melhor avaliação para a sua casa e venda rapidamente com a
+                    equipa da Domus Ethica.</p>
+
+                <a href="evaluation.html" class="evaluation-button">
+                    <span data-translate="eval_btn">Simular Agora</span>
+                    <div class="evaluation-icon-container">
+                        <img src="assets/move-right.svg" alt="arrow-icon" />
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-header">
+            <div class="section-tag">
+                <h6 data-translate="test_tag">Testemunhos</h6>
+            </div>
+
+            <div class="section-title">
+                <h2 data-translate="test_title">Descubra o Que os Nossos Clientes Têm Para Dizer</h2>
+                <p data-translate="test_desc">Veja o que os nossos clientes satisfeitos têm a dizer sobre a experiência
+                    de trabalhar com a Domus
+                    Ethica.</p>
+            </div>
+        </div>
+
+        <div class="testimonial-card" id="testimonial-card"></div>
+    </section>
+
+
+    <section class="faqs-section" id="faqs">
+        <div class="section-header">
+            <div class="section-tag">
+                <h6 data-translate="nav_faqs">FAQs</h6>
+            </div>
+            <div class="section-title">
+                <h2 data-translate="faq_title">Perguntas Frequentes</h2>
+                <p data-translate="faq_desc">Tem mais perguntas? Envie-nos a sua dúvida abaixo.</p>
+            </div>
+        </div>
+
+        <div class="faq-container" id="faq-list"></div>
+    </section>
+
+
+    <section class="contact-section" id="contact">
+        <div class="contact-left">
+            <div class="section-tag">
+                <h6 data-translate="nav_contact">Contactos</h6>
+            </div>
+            <div class="section-title">
+                <h2 data-translate="contact_title">Entre em Contacto</h2>
+                <p data-translate="contact_desc">Estamos aqui para oferecer a melhor solução para o seu imóvel. Contacte
+                    a nossa equipa para obter
+                    orientação especializada e esclarecer todas as suas dúvidas antes de iniciarmos o seu serviço.</p>
+            </div>
+
+            <div class="contact-details">
+                <div class="detail-item">
+                    <h5>Email</h5>
+                    <a href="mailto:domusethica@gmail.com">
+                        <p>domusethica@gmail.com</p>
+                    </a>
+                </div>
+                <div class="detail-item">
+                    <h5>Telemóvel</h5>
+                    <a href="tel:+351936201597">
+                        <p>+351 936 201 597</p>
+                    </a>
+                </div>
+
+                <div class="detail-item">
+                    <h5>Whatsapp</h5>
+                    <a href="https://wa.me/936201597" target="_blank">
+                        <button>
+                            <img src="assets/whatsapp.svg" alt="Whatsapp-icon" />
+                            <p>Whatsapp</p>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="social-follow">
+                    <h5>Redes Sociais</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/domusethica" target="_blank"><img src="assets/facebook.svg"
+                                alt="facebook-icon" /></a>
+                        <a href="https://www.instagram.com/domusethica/" target="_blank"><img src="assets/instagram.svg"
+                                alt="instagram" /></a>
+                        <a href="https://www.linkedin.com/company/domus-ethica/" target="_blank"><img
+                                src="assets/linkedin.svg" alt="linkedin" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label data-translate="form_name">Nome*</label>
+                    <input type="text" name="name" placeholder="Nome" required
+                        data-translate-placeholder="form_name_ph">
+                </div>
+                <div class="form-group">
+                    <label data-translate="form_email">Email*</label>
+                    <input type="email" name="email" placeholder="email@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label data-translate="form_phone">Telemóvel*</label>
+                    <input type="tel" name="phone" placeholder="+351 987 654 321" required>
+                </div>
+                <div class="form-group">
+                    <label data-translate="form_msg">Mensagem*</label>
+                    <textarea name="message" placeholder="Escreva aqui a sua mensagem..." required
+                        data-translate-placeholder="form_msg_ph"></textarea>
+                </div>
+                <button type="button" class="submit-btn" onclick="sendContactForm()" data-translate="form_btn">Enviar
+                    Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.svg" alt="Domus Ethica" class="footer-logo">
+            </div>
+
+            <div class="footer-links">
+                <h5 data-translate="footer_links">Links rápidos</h5>
+                <div class="links-grid">
+                    <div class="link-column">
+                        <a href="#services" data-translate="nav_services">Serviços</a>
+                        <a href="#about" data-translate="nav_about">Quem Somos?</a>
+                        <a href="#properties" data-translate="nav_properties">Imóveis</a>
+                    </div>
+
+                    <div class="link-column">
+                        <a href="#faqs" data-translate="nav_faqs">FAQs</a>
+                        <a href="#contact" data-translate="nav_contact">Contactos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-translate="footer_copy">© 2026 Domus Ethica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="js/testimonials.js"></script>
+    <script src="js/properties.js"></script>
+    <script src="js/faqs.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/lang-change.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

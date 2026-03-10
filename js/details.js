@@ -1,8 +1,7 @@
 // Global variables
 let propertyRef, baseInfo, deepInfo;
 let currentLang = localStorage.getItem('selectedLang') || 'pt';
-let activeIndices = [0, 1, 2]; // Track which images are visible
-
+let activeIndices = [0, 1, 2]; 
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     propertyRef = urlParams.get('ref');
@@ -13,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (baseInfo && deepInfo) {
         renderPropertyDetails();
-        renderActiveGallery(); // Call this AFTER deepInfo is defined
+        renderActiveGallery();
     } else {
         document.querySelector('.property-details-page').innerHTML = "<h2>Imóvel não encontrado</h2>";
     }
@@ -24,7 +23,7 @@ function renderPropertyDetails() {
 
     document.getElementById('details-title').innerText = baseInfo.title[lang];
     document.getElementById('details-location').innerText = baseInfo.location[lang];
-    document.getElementById('details-price').innerText = baseInfo.price;
+    document.getElementById('details-price').innerText = baseInfo.price[lang];
     document.getElementById('details-description').innerHTML = deepInfo.description[lang];
 
     // Specs

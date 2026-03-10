@@ -104,9 +104,9 @@ const translations = {
 
         // all properties page //
         prop_title2: "Descubra Todos os Nossos Imóveis",
-        buy_rent_filter: "Comprar ou Alugar",
+        buy_rent_filter: "Comprar ou Arrendar",
         buy_filter: "Comprar",
-        rent_filter: "Alugar",
+        rent_filter: "Arrendar",
         type_all_filter: "Tipo de Imóvel",
         type_apartment_filter: "Apartamento",
         type_house_filter: "Moradia",

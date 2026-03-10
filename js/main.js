@@ -60,6 +60,7 @@ window.renderProperties = function (data = properties, limit = null) {
         const title = property.title[lang];
         const type = property.type[lang];
         const location = property.location[lang];
+        const price = property.price[lang];
 
         const cardHTML = `
         <a href="${property.link}?ref=${property.ref}" class="property-card-link">
@@ -79,7 +80,7 @@ window.renderProperties = function (data = properties, limit = null) {
                         ${property.baths ? `<div class="spec-item"><img src="assets/bath.svg" /><p>${property.baths}</p></div>` : ''}
                         ${property.sqm ? `<div class="spec-item"><img src="assets/size.svg" /><p>${property.sqm} m&sup2;</p></div>` : ''}
                     </div>
-                    <div class="price"><p>${property.price}</p></div>
+                    <div class="price"><p>${price}</p></div>
                 </div>
             </div>
         </a>`;
@@ -89,19 +90,17 @@ window.renderProperties = function (data = properties, limit = null) {
 
 // CONTACT FORM //
 async function sendContactForm(event) {
-    // This stops the browser from doing anything else (no page refresh)
     if (event) event.preventDefault();
 
     const form = document.getElementById('contact-form');
-    // Using FormData is the safest way to grab all inputs
     const formData = new FormData(form);
 
     try {
         const response = await fetch("https://formspree.io/f/mbdaeazl", {
             method: "POST",
-            body: formData, // Sending as FormData instead of JSON for Formspree
+            body: formData, 
             headers: {
-                'Accept': 'application/json' // Tell Formspree we want a JSON response
+                'Accept': 'application/json'
             }
         });
 

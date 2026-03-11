@@ -153,7 +153,7 @@ body {
     top: 0;
     right: -100%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: var(--bg-dark);
     z-index: 50;
     transition: var(--transition);
@@ -200,7 +200,7 @@ body {
 
 /* MOBILE HERO*/
 .hero {
-    height: 100%;
+    height: 100vh;
     position: relative;
     overflow: hidden;
     background-color: var(--bg-dark);
@@ -237,7 +237,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    top: 40%;
+    top: 40vh;
 }
 
 .hero-text h1 {
@@ -622,7 +622,7 @@ h3 {
 
 .evaluation-img-container {
     width: 100%;
-    height: 60%;
+    height: 60vh;
 }
 
 .evaluation-img-container img {
@@ -1401,7 +1401,7 @@ video::-webkit-media-controls {
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    min-height: 60%;
+    min-height: 60vh;
     margin: 20px auto;
     background: var(--white);
     border-radius: var(--radius-sm);
@@ -1626,7 +1626,7 @@ video::-webkit-media-controls {
     .hero-contents {
         display: flex;
         flex-direction: row;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         align-items: center;
     }
@@ -1636,7 +1636,7 @@ video::-webkit-media-controls {
         z-index: 2;
         padding: var(--s-xl);
         padding-top: 250px;
-        top: 10%;
+        top: 10vh;
     }
 
     .hero-text h1 {
@@ -1740,7 +1740,7 @@ video::-webkit-media-controls {
         padding: 0 var(--s-lg);
         margin-bottom: var(--s-lg);
         height: 500px;
-        width: 100%;
+        width: 100vw;
     }
 
     .stats-grid {
@@ -1793,7 +1793,7 @@ video::-webkit-media-controls {
 
     .evaluation-img-container {
         width: 85%;
-        height: 40%;
+        height: 40vh;
         z-index: 1;
         position: relative;
     }
@@ -2142,7 +2142,7 @@ video::-webkit-media-controls {
     .hero-contents {
         display: flex;
         flex-direction: row;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         align-items: center;
     }
@@ -2150,7 +2150,7 @@ video::-webkit-media-controls {
     .hero-image-container {
         position: relative;
         width: 50%;
-        height: 100%;
+        height: 100vh;
         z-index: 1;
     }
 
@@ -2356,7 +2356,7 @@ video::-webkit-media-controls {
     .evaluation-img-container {
         margin-left: 100px;
         width: 75%;
-        height: 80%;
+        height: 80vw;
     }
 
     .evaluation-card {
@@ -2712,7 +2712,7 @@ video::-webkit-media-controls {
 
     .form-card {
         padding: 100px 80px;
-        min-height: 60%;
+        min-height: 60vh;
     }
 
     .amenities-grid {

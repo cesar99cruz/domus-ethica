@@ -2,6 +2,15 @@
 <html lang="pt">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Y0HFE8G09"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8Y0HFE8G09');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propriedades | Domus Ethica</title>
@@ -116,8 +125,10 @@
 
                 <div class="filter-row">
                     <div class="min-max-filter">
-                        <input type="number" id="min-area" placeholder="Área Mín (m²)" data-translate-placeholder="min_area_filter">
-                        <input type="number" id="max-area" placeholder="Área Máx (m²)" data-translate-placeholder="max_area_filter">
+                        <input type="number" id="min-area" placeholder="Área Mín (m²)"
+                            data-translate-placeholder="min_area_filter">
+                        <input type="number" id="max-area" placeholder="Área Máx (m²)"
+                            data-translate-placeholder="max_area_filter">
                     </div>
                 </div>
 

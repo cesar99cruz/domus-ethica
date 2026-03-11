@@ -110,7 +110,7 @@ const properties = [
         beds: 4,
         baths: 4,
         sqm: 863,
-        image: "assets/properties/DE007/",
+        image: "assets/properties/DE07/DE07-img1.jpg",
         link: "property-details.html",
         ref: "DE 007",
         status: "Buy",
@@ -141,7 +141,7 @@ const properties = [
         beds: 2,
         baths: 1,
         sqm: 63,
-        image: "assets/properties/DE008/",
+        image: "assets/properties/DE08/DE08-img1.jpg",
         link: "property-details.html",
         ref: "DE 008",
         status: "Buy",
@@ -149,7 +149,7 @@ const properties = [
         energyClass: "N/A",
         hasParking: false
     },
-    
+
     //--------------------------------------------//
 
     {
@@ -172,7 +172,7 @@ const properties = [
         beds: 3,
         baths: 3,
         sqm: 863,
-        image: "assets/properties/DE009/",
+        image: "assets/properties/DE09/DE09-img1.jpg",
         link: "property-details.html",
         ref: "DE 009",
         status: "Buy",
@@ -180,13 +180,13 @@ const properties = [
         energyClass: "C",
         hasParking: true
     },
-    
+
     //--------------------------------------------//
 
     {
         title: {
-            pt: "Moradia T2 completamente Remodelada com Sótão e Quintal",
-            en: "Completely Renovated 2-bedroom House with Attic and Backyard."
+            pt: "Moradia T2+1 completamente Remodelada com Sótão e Quintal",
+            en: "Completely Renovated 2+1-bedroom House with Attic and Backyard."
         },
         location: {
             pt: "Paúl, Torres Vedras",
@@ -203,7 +203,7 @@ const properties = [
         beds: 2,
         baths: 1,
         sqm: 235,
-        image: "assets/properties/DE010/",
+        image: "assets/properties/DE10/DE10-img1.jpg",
         link: "property-details.html",
         ref: "DE 010",
         status: "Buy",
@@ -211,7 +211,7 @@ const properties = [
         energyClass: "B",
         hasParking: false
     },
-    
+
     //--------------------------------------------//
 
     {
@@ -234,7 +234,7 @@ const properties = [
         beds: 3,
         baths: 2,
         sqm: 129,
-        image: "assets/properties/DE11/",
+        image: "assets/properties/DE11/DE11-img-1.jpg",
         link: "property-details.html",
         ref: "DE 011",
         status: "Buy",
@@ -242,7 +242,7 @@ const properties = [
         energyClass: "E",
         hasParking: true
     },
-    
+
     //--------------------------------------------//
 
     {
@@ -265,7 +265,7 @@ const properties = [
         beds: 2,
         baths: 1,
         sqm: 104,
-        image: "assets/properties/DE12/",
+        image: "assets/properties/DE12/DE12-img1.jpg",
         link: "property-details.html",
         ref: "DE 012",
         status: "Buy",

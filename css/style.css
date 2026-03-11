@@ -153,7 +153,7 @@ body {
     top: 0;
     right: -100%;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: var(--bg-dark);
     z-index: 50;
     transition: var(--transition);
@@ -187,6 +187,7 @@ body {
 
 .hamburger.is-open span:nth-child(2) {
     opacity: 0;
+    transform: scale(0); 
 }
 
 .hamburger.is-open span:nth-child(3) {
@@ -199,7 +200,7 @@ body {
 
 /* MOBILE HERO*/
 .hero {
-    height: 100vh;
+    height: 100%;
     position: relative;
     overflow: hidden;
     background-color: var(--bg-dark);
@@ -236,7 +237,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    top: 40vh;
+    top: 40%;
 }
 
 .hero-text h1 {
@@ -621,7 +622,7 @@ h3 {
 
 .evaluation-img-container {
     width: 100%;
-    height: 60vh;
+    height: 60%;
 }
 
 .evaluation-img-container img {
@@ -1400,7 +1401,7 @@ video::-webkit-media-controls {
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    min-height: 60vh;
+    min-height: 60%;
     margin: 20px auto;
     background: var(--white);
     border-radius: var(--radius-sm);
@@ -1625,7 +1626,7 @@ video::-webkit-media-controls {
     .hero-contents {
         display: flex;
         flex-direction: row;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         align-items: center;
     }
@@ -1635,7 +1636,7 @@ video::-webkit-media-controls {
         z-index: 2;
         padding: var(--s-xl);
         padding-top: 250px;
-        top: 10vh;
+        top: 10%;
     }
 
     .hero-text h1 {
@@ -1739,7 +1740,7 @@ video::-webkit-media-controls {
         padding: 0 var(--s-lg);
         margin-bottom: var(--s-lg);
         height: 500px;
-        width: 100vw;
+        width: 100%;
     }
 
     .stats-grid {
@@ -1792,7 +1793,7 @@ video::-webkit-media-controls {
 
     .evaluation-img-container {
         width: 85%;
-        height: 40vh;
+        height: 40%;
         z-index: 1;
         position: relative;
     }
@@ -2141,7 +2142,7 @@ video::-webkit-media-controls {
     .hero-contents {
         display: flex;
         flex-direction: row;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         align-items: center;
     }
@@ -2149,7 +2150,7 @@ video::-webkit-media-controls {
     .hero-image-container {
         position: relative;
         width: 50%;
-        height: 100vh;
+        height: 100%;
         z-index: 1;
     }
 
@@ -2355,7 +2356,7 @@ video::-webkit-media-controls {
     .evaluation-img-container {
         margin-left: 100px;
         width: 75%;
-        height: 80vh;
+        height: 80%;
     }
 
     .evaluation-card {
@@ -2711,7 +2712,7 @@ video::-webkit-media-controls {
 
     .form-card {
         padding: 100px 80px;
-        min-height: 60vh;
+        min-height: 60%;
     }
 
     .amenities-grid {

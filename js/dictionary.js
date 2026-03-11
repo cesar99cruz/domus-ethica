@@ -123,9 +123,7 @@ const translations = {
         parking_filter: "Estacionamento?",
         yes_parking_filter: "Sim",
         no_parking_filter: "Não",
-        price_range_all_filter: "Ordenar por...",
-        price_range_low_filter: "Mais barato",
-        price_range_high_filter: "Mais caro",
+        ref_filter: "Referência da Propriedade",
         clear_filter: "Limpar Filtros",
 
         // Step 1
@@ -302,15 +300,13 @@ const translations = {
         parking_filter: "Parking?",
         yes_parking_filter: "Yes",
         no_parking_filter: "No",
-        price_range_all_filter: "Sort by...",
-        price_range_low_filter: "Cheapest",
-        price_range_high_filter: "Most expensive",
+        ref_filter: "Property Reference",
         clear_filter: "Clear Filters",
 
         // Step 1
         eval_title_1: "Sell Your Property",
         eval_desc_1: "Want to know how much your property is worth?",
-        
+
         // Step 2
         eval_title_2: "What additional amenities does your property have?",
         amenity_balcony: "Balcony",
@@ -322,7 +318,7 @@ const translations = {
         amenity_pool: "Pool",
         amenity_terrace: "Terrace",
         amenity_license: "Tourist license",
-        
+
         // Step 3
         eval_title_3: "Describe your Property",
         label_prop_type: "Property Type*",
@@ -345,7 +341,7 @@ const translations = {
         label_land_area: "Land Area (sqm)",
         label_location: "Property Location",
         ph_location: "e.g.: Cascais",
-        
+
         // Step 4
         eval_title_4: "Contact Information",
         eval_desc_4: "Leave your details to receive the valuation.",

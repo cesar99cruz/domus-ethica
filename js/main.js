@@ -98,7 +98,7 @@ async function sendContactForm(event) {
     try {
         const response = await fetch("https://formspree.io/f/mbdaeazl", {
             method: "POST",
-            body: formData, 
+            body: formData,
             headers: {
                 'Accept': 'application/json'
             }
@@ -129,6 +129,7 @@ window.applyFilters = function () {
         maxArea: parseFloat(document.getElementById('max-area')?.value) || Infinity,
         energy: document.getElementById('energy-filter')?.value || 'all',
         parking: document.getElementById('parking-filter')?.value || 'all',
+        ref: document.getElementById('ref-input')?.value || '',
         sort: document.getElementById('price-sort')?.value || 'default'
     };
 
@@ -146,7 +147,8 @@ window.applyFilters = function () {
 
         // Search Filter
         const matchesSearch = prop.location[lang].toLowerCase().includes(filters.search) ||
-            prop.title[lang].toLowerCase().includes(filters.search);
+            prop.title[lang].toLowerCase().includes(filters.search) ||
+            String(prop.ref || "").toLowerCase().includes(filters.search);
 
         // Numeric Ranges
         const matchesPrice = (numericPrice >= filters.minPrice && numericPrice <= filters.maxPrice);
@@ -179,6 +181,15 @@ window.applyFilters = function () {
             matchesArea && matchesRooms && matchesBaths && matchesEnergy && matchesParking;
     });
 
+    // 1. First, Filter by Reference
+    if (filters.ref) {
+        const searchRef = filters.ref.toLowerCase().trim();
+        filtered = filtered.filter(item =>
+            String(item.ref).toLowerCase().includes(searchRef)
+        );
+    }
+
+    // 2. Then, Sort (Price or Default)
     if (filters.sort !== 'default') {
         filtered.sort((a, b) => {
             const pA = parseFloat(String(a.price).replace(/[^\d]/g, '')) || 0;

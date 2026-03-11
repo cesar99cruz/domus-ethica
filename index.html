@@ -91,7 +91,11 @@
             </div>
         </div>
     </section>
-
+    <div id="cookie-banner"
+        style="display: none; position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 20px; text-align: center; z-index: 1000;">
+        <p>Utilizamos cookies para melhorar a sua experiência.</p>
+        <button id="accept-cookies" style="padding: 10px 20px; cursor: pointer;">Aceitar</button>
+    </div>
 
     <section class="services-section" id="services">
         <div class="section-header">
@@ -440,6 +444,34 @@
     <script src="js/lang-change.js"></script>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        const banner = document.getElementById('cookie-banner');
+        const acceptBtn = document.getElementById('accept-cookies');
+
+        if (!localStorage.getItem('cookieConsent')) {
+            banner.style.display = 'block';
+        } else {
+            loadGoogleAnalytics();
+        }
+
+        function loadGoogleAnalytics() {
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-8Y0HFE8G09";
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-8Y0HFE8G09');
+        }
+
+        acceptBtn.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'true');
+            banner.style.display = 'none';
+            loadGoogleAnalytics();
+        });
+    </script>
     <script>
         AOS.init();
     </script>

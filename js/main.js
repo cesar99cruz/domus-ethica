@@ -46,7 +46,6 @@ window.renderProperties = function (data = properties, limit = null) {
     container.innerHTML = '';
     const lang = window.currentLang || 'pt';
 
-    // Safety check if properties.js didn't load
     if (typeof data === 'undefined' || !data) return;
 
     const displayList = limit ? data.slice(0, limit) : data;
@@ -139,38 +138,29 @@ window.applyFilters = function () {
         const priceStr = String(prop.price || "");
         const numericPrice = parseFloat(priceStr.replace(/[^\d]/g, '')) || 0;
 
-        // Status Filter
         const matchesStatus = (filters.status === 'all') || (prop.status === filters.status);
-
-        // Look at the STRING targetType instead of the OBJECT type
         const matchesType = (filters.targetType === 'all') || (prop.targetType === filters.targetType);
 
-        // Search Filter
         const matchesSearch = prop.location[lang].toLowerCase().includes(filters.search) ||
             prop.title[lang].toLowerCase().includes(filters.search) ||
             String(prop.ref || "").toLowerCase().includes(filters.search);
 
-        // Numeric Ranges
         const matchesPrice = (numericPrice >= filters.minPrice && numericPrice <= filters.maxPrice);
         const matchesArea = (prop.sqm || 0) >= filters.minArea && (prop.sqm || 0) <= filters.maxArea;
 
-        // Rooms and Baths
         const matchesRooms = (filters.rooms === 'all') ||
             (filters.rooms === '4' ? (prop.beds || 0) >= 4 : (prop.beds || 0) == filters.rooms);
 
         const matchesBaths = (filters.baths === 'all') ||
             (filters.baths === '4' ? (prop.baths || 0) >= 4 : (prop.baths || 0) == filters.baths);
 
-        // Technicals
         let matchesEnergy = false;
         if (filters.energy === 'all') {
             matchesEnergy = true;
         } else if (filters.energy === 'C') {
-            // This now correctly accepts C, D, E, F, or G
             const lowGrades = ['C', 'D', 'E', 'F', 'G'];
             matchesEnergy = lowGrades.includes(prop.energyClass);
         } else {
-            // This handles A and B
             matchesEnergy = (prop.energyClass === filters.energy);
         }
 
@@ -181,7 +171,6 @@ window.applyFilters = function () {
             matchesArea && matchesRooms && matchesBaths && matchesEnergy && matchesParking;
     });
 
-    // 1. First, Filter by Reference
     if (filters.ref) {
         const searchRef = filters.ref.toLowerCase().trim();
         filtered = filtered.filter(item =>
@@ -189,7 +178,6 @@ window.applyFilters = function () {
         );
     }
 
-    // 2. Then, Sort (Price or Default)
     if (filters.sort !== 'default') {
         filtered.sort((a, b) => {
             const pA = parseFloat(String(a.price).replace(/[^\d]/g, '')) || 0;
@@ -202,7 +190,6 @@ window.applyFilters = function () {
 };
 
 window.clearFilters = function () {
-    // Reset all Select dropdowns
     const selects = document.querySelectorAll('.properties-filter-container select');
     selects.forEach(select => {
         if (select.id === 'price-sort') {
@@ -212,13 +199,11 @@ window.clearFilters = function () {
         }
     });
 
-    // Clear all Input fields
     const inputs = document.querySelectorAll('.properties-filter-container input');
     inputs.forEach(input => {
         input.value = '';
     });
 
-    // Re-render the full list of properties
     window.renderProperties(properties);
 };
 
@@ -276,21 +261,18 @@ window.loadFAQs = function () {
 
 // CONSOLIDATED INITIALIZATION //
 document.addEventListener('DOMContentLoaded', () => {
-    // Check Page Type
     const isPropertiesPage = !!document.getElementById('status-filter');
 
-    // Load Properties
     if (typeof properties !== 'undefined') {
         if (isPropertiesPage) {
-            window.renderProperties(properties); // Show all
+            window.renderProperties(properties); 
             const filters = document.querySelectorAll('.properties-filter-container input, .properties-filter-container select');
             filters.forEach(input => input.addEventListener('input', window.applyFilters));
         } else {
-            window.renderProperties(properties, 3); // Home Page limit
+            window.renderProperties(properties, 3); 
         }
     }
 
-    // Stats Observer
     const counters = document.querySelectorAll('.count');
     if (counters.length > 0) {
         const statsObserver = new IntersectionObserver((entries) => {
@@ -305,13 +287,11 @@ document.addEventListener('DOMContentLoaded', () => {
         statsObserver.observe(target);
     }
 
-    // Clear Filters
     const clearBtn = document.getElementById('clear-filters-btn');
     if (clearBtn) {
         clearBtn.addEventListener('click', window.clearFilters);
     }
 
-    // Load others
     window.renderTestimonials();
     window.loadFAQs();
 });

@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     propertyRef = urlParams.get('ref');
 
-    // Find our data
     baseInfo = properties.find(p => p.ref === propertyRef);
     deepInfo = fullPropertyDetails[propertyRef];
 
@@ -59,13 +58,12 @@ function renderPropertyDetails() {
     }
 }
 
-// HELPER: Detects media and wraps video/button for positioning and rounding
+// HELPER
 function getMediaHTML(src, extraClass = "") {
     if (!src) return '';
     const isVideo = src.match(/\.(mp4|webm|mov|ogg)$/i);
     
     if (isVideo) {
-        // The wrapper is key: it keeps the mute button inside the video box
         return `
             <div class="video-wrapper" style="width:100%; height:100%; position:relative; overflow:hidden; border-radius:15px;">
                 <video id="active-video" src="${src}" class="gallery-img ${extraClass}" autoplay muted loop playsinline></video>
@@ -77,7 +75,7 @@ function getMediaHTML(src, extraClass = "") {
     return `<img src="${src}" class="gallery-img ${extraClass}" alt="Property Media">`;
 }
 
-// Function to toggle sound - 'event' prevents triggering the gallery change
+// Function to toggle sound
 window.toggleMute = function(event) {
     if (event) event.stopPropagation(); 
     const video = document.getElementById('active-video');

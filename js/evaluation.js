@@ -7,13 +7,11 @@ class EvaluationForm {
         this.render();
     }
 
-    // Saves text, select, and number inputs to formData
     updateField(name, value) {
         this.formData[name] = value;
         console.log("Form Progress:", this.formData);
     }
 
-    // Toggles amenity selection
     toggleAmenity(el) {
         el.classList.toggle('active');
         const active = document.querySelectorAll('.amenity-option.active');
@@ -21,17 +19,12 @@ class EvaluationForm {
     }
 
     render() {
-        // Update progress bar
         const progress = (this.currentStep / this.totalSteps) * 100;
         const progressBar = document.getElementById('progress-bar');
         if (progressBar) progressBar.style.width = `${progress}%`;
 
-        // Inject the new step HTML
         this.container.innerHTML = this.getStepContent(this.currentStep);
 
-        // THIS IS THE FIX:
-        // Call the function that ALREADY exists in your lang-change.js
-        // We pass window.currentLang so it remembers the user's choice.
         if (typeof toggleLanguage === 'function') {
             toggleLanguage(window.currentLang);
         }
@@ -166,7 +159,6 @@ class EvaluationForm {
     prev() { if (this.currentStep > 1) { this.currentStep--; this.render(); } }
 
     async submit() {
-        // This is the endpoint you just shared
         const endpoint = "https://formspree.io/f/mlgpgpvb";
 
         try {
@@ -175,13 +167,11 @@ class EvaluationForm {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                // This sends all your collected form data to Formspree
                 body: JSON.stringify(this.formData)
             });
 
             if (response.ok) {
                 alert("Obrigado! A avaliação foi enviada.");
-                // Send her to your 'obrigado.html'
                 window.location.href = "obrigado.html";
             } else {
                 alert("Erro ao enviar. Tente novamente.");

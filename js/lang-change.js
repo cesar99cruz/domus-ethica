@@ -32,17 +32,14 @@ function toggleLanguage(lang) {
         }
     });
 
-    // HOME PAGE
     if (window.renderProperties) window.renderProperties();
     if (window.renderTestimonials) window.renderTestimonials();
     if (window.loadFAQs) window.loadFAQs();
 
-    // DETAILS PAGE
     if (window.renderPropertyDetails) {
         window.renderPropertyDetails();
     }
 
-    // Placeholder
     const inputs = document.querySelectorAll('input[placeholder]');
 
     inputs.forEach(input => {
@@ -56,7 +53,6 @@ function toggleLanguage(lang) {
     });
 }
 
-// AUTO-RUN: This makes sure when the details page opens
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('selectedLang');
     if (savedLang) {

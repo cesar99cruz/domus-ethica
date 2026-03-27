@@ -140,7 +140,6 @@ const fullPropertyDetails = {
             "assets/properties/DE07/DE07-img15.jpg",
             "assets/properties/DE07/DE07-img16.jpg",
             "assets/properties/DE07/DE07-img17.jpg",
-            "assets/properties/DE07/DE07-img18.jpg",
             "assets/properties/DE07/DE07-img19.jpg",
             "assets/properties/DE07/DE07-img20.jpg",
             "assets/properties/DE07/DE07-img21.jpg",

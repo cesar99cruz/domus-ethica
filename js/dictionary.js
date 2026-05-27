@@ -6,6 +6,7 @@ const translations = {
         nav_properties: "Imóveis",
         nav_faqs: "FAQs",
         nav_contact: "Contactos",
+        nav_careers: "Faz Parte da Equipa",
 
         // hero section //
         hero_h1: "Consultoria Imobiliária de Confiança.",
@@ -183,6 +184,7 @@ const translations = {
         nav_properties: "Properties",
         nav_faqs: "FAQs",
         nav_contact: "Contacts",
+        nav_careers: "Join our Team",
 
         // hero section //
         hero_h1: "Trusted Real Estate Consultancy.",

@@ -1,6 +1,36 @@
 const properties = [
     {
         title: {
+            pt: "Moradia T5 com Excelente Exposição Solar",
+            en: "5-Bedroom Villa with Excellent Sun Exposure"
+        },
+        location: {
+            pt: "Bispeira, Sobral de Monte Agraço",
+            en: "Bispeira, Sobral de Monte Agraço"
+        },
+        price: {
+            pt: "380 000 €", // UPDATE THIS PRICE
+            en: "380 000 €"  // UPDATE THIS PRICE
+        },
+        type: {
+            pt: "Para Venda",
+            en: "For Sale"
+        },
+        beds: 5,
+        baths: 3, // 1 downstairs suite, 1 downstairs social, 1 upstairs
+        sqm: 249, // Gross construction area (Área bruta de construção)
+        image: "assets/properties/DE16/DE16-img1.jpg", 
+        link: "property-details.html",
+        ref: "DE 016",
+        status: "Buy",
+        targetType: "House",
+        hasParking: true // Property has space for 3 vehicles
+    },
+
+    //--------------------------------------------//
+    
+    {
+        title: {
             pt: "Terreno com Projeto Aprovado",
             en: "Land with Approved Project"
         },

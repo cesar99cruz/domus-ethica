@@ -93,7 +93,7 @@ const fullPropertyDetails = {
         ],
         table: {
             mlsId: "DE 016",
-            status: { pt: "Para Venda", en: "For Sale" },
+            status: { pt: "Reservado", en: "Reserved" },
             type: { pt: "Moradia", en: "Villa" },
             area: "237 m²",
             certification: "E"

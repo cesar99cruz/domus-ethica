@@ -13,8 +13,8 @@ const properties = [
             en: "380 000 €"  // UPDATE THIS PRICE
         },
         type: {
-            pt: "Para Venda",
-            en: "For Sale"
+            pt: "Reservado",
+            en: "Reserved"
         },
         beds: 5,
         baths: 3, // 1 downstairs suite, 1 downstairs social, 1 upstairs

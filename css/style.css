@@ -2565,7 +2565,7 @@ video::-webkit-media-controls {
     }
 
     .links-grid {
-        gap: var(--s-xl);
+        gap: var(--s-lg);
     }
 
     /* ------------------- PROPERTY-DETAILS PAGE ----------------- */
@@ -2728,4 +2728,605 @@ video::-webkit-media-controls {
         gap: var(--s-md);
     }
 
+}
+
+/* ==========================================
+   DOMUS ETHICA - PRIVACY POLICY STYLES
+   ========================================== */
+
+/* 1. Main Container & Centering */
+main {
+    max-width: 860px; /* Limits text width for optimal reading measure */
+    margin: 0 auto;
+    padding: 20px 24px 100px;
+    box-sizing: border-box;
+    color: #1a1a1a;
+
+/* 2. Page Main Title */
+.section-title.section-privacy {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.section-title.section-privacy h2[data-translate="priv_policy"] {
+    /* Overrides inline 150px style cleanly for header clearance */
+    margin-top: 150px !important; 
+   
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #111111;
+    letter-spacing: -0.5px;
+}
+
+/* 3. Section Cards */
+.section-header.section-privacy {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 24px;
+    text-align: left !important; /* Forces left-alignment for body readability */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    transition: border-color 0.3s ease;
+}
+
+.section-header.section-privacy:hover {
+    border-color: #C5A059; /* Subtle gold hover border */
+}
+
+/* Section Headings */
+.section-header.section-privacy h2 {
+    
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: #111111;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+/* Body Text & Paragraphs */
+.section-header.section-privacy p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #4a4a4a;
+    margin-top: 0;
+    margin-bottom: 14px;
+    text-align: justify;
+}
+
+.section-header.section-privacy p:last-child {
+    margin-bottom: 0;
+}
+
+/* Bold Text */
+.section-header.section-privacy strong {
+    color: #111111;
+    font-weight: 600;
+}
+
+/* Unordered Lists */
+.section-header.section-privacy ul {
+    margin: 16px 0;
+    padding-left: 22px;
+    list-style-type: disc;
+}
+
+.section-header.section-privacy li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #4a4a4a;
+    margin-bottom: 12px;
+}
+
+.section-header.section-privacy li:last-child {
+    margin-bottom: 0;
+}
+
+/* Links (CNPD / Email) */
+.section-header.section-privacy a {
+    color: #C5A059;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.section-header.section-privacy a:hover {
+    color: #b08d48;
+}
+
+/* ==========================================
+   MEDIA QUERIES (TABLET & MOBILE)
+   ========================================== */
+
+/* iPad / Tablet (Portrait & Landscape: 768px - 1024px) */
+@media (max-width: 1024px) {
+    main {
+        max-width: 720px;
+        padding: 20px 20px 80px;
+    }
+
+    .section-title.section-privacy h2[data-translate="priv_policy"] {
+        margin-top: 180px !important;
+        font-size: 2.1rem;
+    }
+
+    .section-header.section-privacy {
+        padding: 26px 28px;
+    }
+
+    .section-header.section-privacy h2 {
+        font-size: 1.35rem;
+    }
+}
+
+/* Mobile Devices (320px - 767px) */
+@media (max-width: 767px) {
+    main {
+        padding: 10px 16px 50px;
+    }
+
+    .section-title.section-privacy {
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+
+    .section-title.section-privacy h2[data-translate="priv_policy"] {
+        margin-top: 120px !important;
+        font-size: 1.75rem;
+    }
+
+    .section-header.section-privacy {
+        padding: 20px 18px;
+        margin-bottom: 18px;
+        border-radius: 6px;
+    }
+
+    .section-header.section-privacy h2 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .section-header.section-privacy p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        text-align: left; /* Prevents wide word gaps on narrow screens */
+    }
+
+    .section-header.section-privacy ul {
+        padding-left: 18px;
+    }
+
+    .section-header.section-privacy li {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
+
+/* Apply the exact same card design to Privacy and Terms */
+.section-title.section-privacy,
+.section-title.section-terms {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.section-title.section-privacy h2[data-translate="priv_policy"],
+.section-title.section-terms h2[data-translate="terms_main_title"] {
+    margin-top: 150px !important; 
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #111111;
+    letter-spacing: -0.5px;
+}
+
+.section-header.section-privacy,
+.section-header.section-terms {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 24px;
+    text-align: left !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    transition: border-color 0.3s ease;
+}}
+
+/* ==========================================
+   DOMUS ETHICA - SHARING POLICY STYLES
+   ========================================== */
+
+/* 1. Main Container & Centering */
+main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px 24px 100px;
+    box-sizing: border-box;
+    color: #1a1a1a;
+}
+
+/* 2. Page Main Title */
+.section-title.section-sharing {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.section-title.section-sharing h2[data-translate="sharing_main_title"] {
+    margin-top: 150px !important; 
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #111111;
+    letter-spacing: -0.5px;
+}
+
+/* 3. Section Cards */
+.section-header.section-sharing {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 24px;
+    text-align: left !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    transition: border-color 0.3s ease;
+}
+
+.section-header.section-sharing:hover {
+    border-color: #C5A059; /* Subtle gold hover border */
+}
+
+/* Section Headings */
+.section-header.section-sharing h2 {
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: #111111;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+/* Body Text & Paragraphs */
+.section-header.section-sharing p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #4a4a4a;
+    margin-top: 0;
+    margin-bottom: 14px;
+    text-align: justify;
+}
+
+.section-header.section-sharing p:last-child {
+    margin-bottom: 0;
+}
+
+/* Bold Text */
+.section-header.section-sharing strong {
+    color: #111111;
+    font-weight: 600;
+}
+
+/* Unordered Lists */
+.section-header.section-sharing ul {
+    margin: 16px 0;
+    padding-left: 22px;
+    list-style-type: disc;
+}
+
+.section-header.section-sharing li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #4a4a4a;
+    margin-bottom: 12px;
+}
+
+.section-header.section-sharing li:last-child {
+    margin-bottom: 0;
+}
+
+/* Links */
+.section-header.section-sharing a {
+    color: #C5A059;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.section-header.section-sharing a:hover {
+    color: #b08d48;
+}
+
+/* ==========================================
+   MEDIA QUERIES (TABLET & MOBILE)
+   ========================================== */
+
+/* iPad / Tablet (Portrait & Landscape: 768px - 1024px) */
+@media (max-width: 1024px) {
+    main {
+        max-width: 720px;
+        padding: 20px 20px 80px;
+    }
+
+    .section-title.section-sharing h2[data-translate="sharing_main_title"] {
+        margin-top: 180px !important;
+        font-size: 2.1rem;
+    }
+
+    .section-header.section-sharing {
+        padding: 26px 28px;
+    }
+
+    .section-header.section-sharing h2 {
+        font-size: 1.35rem;
+    }
+}
+
+/* Mobile Devices (320px - 767px) */
+@media (max-width: 767px) {
+    main {
+        padding: 10px 16px 50px;
+    }
+
+    .section-title.section-sharing {
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+
+    .section-title.section-sharing h2[data-translate="sharing_main_title"] {
+        margin-top: 120px !important;
+        font-size: 1.75rem;
+    }
+
+    .section-header.section-sharing {
+        padding: 20px 18px;
+        margin-bottom: 18px;
+        border-radius: 6px;
+    }
+
+    .section-header.section-sharing h2 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .section-header.section-sharing p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .section-header.section-sharing ul {
+        padding-left: 18px;
+    }
+
+    .section-header.section-sharing li {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
+
+/* ==========================================
+   DOMUS ETHICA - COMPLAINTS BOOK STYLES
+   ========================================== */
+
+/* 1. Main Container & Centering */
+main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px 24px 100px;
+    box-sizing: border-box;
+    color: #1a1a1a;
+}
+
+/* 2. Page Main Title */
+.section-title.section-complaints {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.section-title.section-complaints h2[data-translate="complaints_main_title"] {
+    margin-top: 150px !important; 
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #111111;
+    letter-spacing: -0.5px;
+}
+
+/* 3. Section Cards */
+.section-header.section-complaints {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 24px;
+    text-align: left !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    transition: border-color 0.3s ease;
+}
+
+.section-header.section-complaints:hover {
+    border-color: #C5A059; /* Subtle gold hover border */
+}
+
+/* Section Headings */
+.section-header.section-complaints h2 {
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: #111111;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+/* Body Text & Paragraphs */
+.section-header.section-complaints p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #4a4a4a;
+    margin-top: 0;
+    margin-bottom: 14px;
+    text-align: justify;
+}
+
+.section-header.section-complaints p:last-child {
+    margin-bottom: 0;
+}
+
+/* Bold Text */
+.section-header.section-complaints strong {
+    color: #111111;
+    font-weight: 600;
+}
+
+/* Official Mandatory Visual Badge Styling */
+.complaints-badge-container {
+    display: flex;
+    justify-content: center;
+    margin: 28px 0 10px;
+}
+
+.official-lre-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #002b49; /* Official LRE Navy Blue */
+    color: #ffffff !important;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none !important;
+    border: 1px solid #001f35;
+    box-shadow: 0 4px 14px rgba(0, 43, 73, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.official-lre-button:hover {
+    background-color: #001f35;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 43, 73, 0.25);
+}
+
+.lre-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+.lre-text-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.lre-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.lre-subtitle {
+    font-size: 0.75rem;
+    color: #C5A059; /* Domus Ethica Gold Accent */
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+}
+
+/* ==========================================
+   MEDIA QUERIES (TABLET & MOBILE)
+   ========================================== */
+
+/* iPad / Tablet (Portrait & Landscape: 768px - 1024px) */
+@media (max-width: 1024px) {
+    main {
+        max-width: 720px;
+        padding: 20px 20px 80px;
+    }
+
+    .section-title.section-complaints h2[data-translate="complaints_main_title"] {
+        margin-top: 180px !important;
+        font-size: 2.1rem;
+    }
+
+    .section-header.section-complaints {
+        padding: 26px 28px;
+    }
+
+    .section-header.section-complaints h2 {
+        font-size: 1.35rem;
+    }
+}
+
+/* Mobile Devices (320px - 767px) */
+@media (max-width: 767px) {
+    main {
+        padding: 10px 16px 50px;
+    }
+
+    .section-title.section-complaints {
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+
+    .section-title.section-complaints h2[data-translate="complaints_main_title"] {
+        margin-top: 120px !important;
+        font-size: 1.75rem;
+    }
+
+    .section-header.section-complaints {
+        padding: 20px 18px;
+        margin-bottom: 18px;
+        border-radius: 6px;
+    }
+
+    .section-header.section-complaints h2 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .section-header.section-complaints p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .official-lre-button {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .lre-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .lre-title {
+        font-size: 0.85rem;
+    }
+
+    .lre-subtitle {
+        font-size: 0.7rem;
+    }
+}
+
+.footer-lre-img {
+    width: 160px; /* Standard visible size */
+    height: auto;
+    display:flex;
+    transition: opacity 0.2s ease;
+    align-items:center;
+    justify-content: center;
+}
+
+.footer-lre-img:hover {
+    opacity: 0.85;
 }

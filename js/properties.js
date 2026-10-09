@@ -1,34 +1,35 @@
 const properties = [
     {
         title: {
-            pt: "Moradia T5 com Excelente Exposição Solar",
-            en: "5-Bedroom Villa with Excellent Sun Exposure"
+            pt: "Moradia Térrea T2 com Garagem e Jardim",
+            en: "2-Bedroom Single-Story Villa with Garage and Garden"
         },
         location: {
-            pt: "Bispeira, Sobral de Monte Agraço",
-            en: "Bispeira, Sobral de Monte Agraço"
+            pt: "Bairro da Boavista, Torres Vedras",
+            en: "Bairro da Boavista, Torres Vedras"
         },
         price: {
-            pt: "380 000 €", // UPDATE THIS PRICE
-            en: "380 000 €"  // UPDATE THIS PRICE
+            pt: "430 000 €", // UPDATE THIS PRICE
+            en: "430 000 €"  // UPDATE THIS PRICE
         },
         type: {
-            pt: "Reservado",
-            en: "Reserved"
+            pt: "Para Venda",
+            en: "For Sale"
         },
-        beds: 5,
-        baths: 3, // 1 downstairs suite, 1 downstairs social, 1 upstairs
-        sqm: 249, // Gross construction area (Área bruta de construção)
-        image: "assets/properties/DE16/DE16-img1.jpg", 
+        beds: 2,
+        baths: 1, 
+        sqm: 395, 
+        image: "assets/properties/DE18/DE18-img2.jpg",
         link: "property-details.html",
-        ref: "DE 016",
+        ref: "DE 018",
         status: "Buy",
         targetType: "House",
-        hasParking: true // Property has space for 3 vehicles
+        energyClass: "B",
+        hasParking: true 
     },
 
     //--------------------------------------------//
-    
+
     {
         title: {
             pt: "Terreno com Projeto Aprovado",
@@ -55,6 +56,37 @@ const properties = [
         status: "Buy",
         targetType: "Land",
         hasParking: false
+    },
+
+    //--------------------------------------------//
+
+    {
+        title: {
+            pt: "Moradia T5 com Excelente Exposição Solar",
+            en: "5-Bedroom Villa with Excellent Sun Exposure"
+        },
+        location: {
+            pt: "Bispeira, Sobral de Monte Agraço",
+            en: "Bispeira, Sobral de Monte Agraço"
+        },
+        price: {
+            pt: "380 000 €", // UPDATE THIS PRICE
+            en: "380 000 €"  // UPDATE THIS PRICE
+        },
+        type: {
+            pt: "Vendido",
+            en: "Sold"
+        },
+        beds: 5,
+        baths: 3, // 1 downstairs suite, 1 downstairs social, 1 upstairs
+        sqm: 249, // Gross construction area (Área bruta de construção)
+        image: "assets/properties/DE16/DE16-img1.jpg",
+        link: "property-details.html",
+        ref: "DE 016",
+        status: "Buy",
+        targetType: "House",
+        energyClass: "E",
+        hasParking: true // Property has space for 3 vehicles
     },
 
     //--------------------------------------------//

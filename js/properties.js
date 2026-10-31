@@ -9,8 +9,8 @@ const properties = [
             en: "Bairro da Boavista, Torres Vedras"
         },
         price: {
-            pt: "430 000 €", // UPDATE THIS PRICE
-            en: "430 000 €"  // UPDATE THIS PRICE
+            pt: "395 000 €", // UPDATE THIS PRICE
+            en: "395 000 €"  // UPDATE THIS PRICE
         },
         type: {
             pt: "Para Venda",

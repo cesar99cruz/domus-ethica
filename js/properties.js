@@ -1,8 +1,39 @@
 const properties = [
     {
         title: {
-            pt: "Moradia Térrea T2 com Garagem e Jardim",
-            en: "2-Bedroom Single-Story Villa with Garage and Garden"
+            pt: "Moradia T3 Remodelada com Logradouro e Sótão Aproveitável",
+            en: "Renovated 3-Bedroom House with Patio Access and Expandable Attic"
+        },
+        location: {
+            pt: "Carvalhal, Turcifal",
+            en: "Carvalhal, Turcifal"
+        },
+        price: {
+            pt: "350 000 €",
+            en: "350 000 €"
+        },
+        type: {
+            pt: "Para Venda",
+            en: "For Sale"
+        },
+        beds: 3,
+        baths: 2,
+        sqm: 132,
+        image: "assets/properties/DE19/DE19-img-1.png", // Verify cover image filename
+        link: "property-details.html",
+        ref: "DE 019",
+        status: "Buy",
+        targetType: "House",
+        energyClass: "C",
+        hasParking: false
+    },
+
+    //--------------------------------------------//
+
+    {
+        title: {
+            pt: "Moradia Térrea com Garagem e Elevado Potencial de Expansão",
+            en: "Single-Story Villa with Garage and High Expansion Potential"
         },
         location: {
             pt: "Bairro da Boavista, Torres Vedras",
@@ -17,15 +48,15 @@ const properties = [
             en: "For Sale"
         },
         beds: 2,
-        baths: 1, 
-        sqm: 395, 
+        baths: 1,
+        sqm: 395,
         image: "assets/properties/DE18/DE18-img2.jpg",
         link: "property-details.html",
         ref: "DE 018",
         status: "Buy",
         targetType: "House",
         energyClass: "B",
-        hasParking: true 
+        hasParking: true
     },
 
     //--------------------------------------------//

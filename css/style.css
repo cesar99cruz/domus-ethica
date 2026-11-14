@@ -994,13 +994,22 @@ h3 {
     padding: 0 var(--s-md);
 }
 
-.gallery-main img,
-.gallery-side img {
+.gallery-main img {
     width: 100%;
-    object-fit: cover;
+    aspect-ratio: 3/2;
+    object-fit: contain; /* Shrinks vertical images to fit inside the 3/2 box without cropping */
+    background-color: var(--light-grey); /* Clean dark framing on the left/right sides (or use #f5f5f5 for light) */
     border-radius: var(--radius-sm) !important;
     overflow: hidden;
+    display: block;
+}
+
+.gallery-side img {
+    width: 100%;
     aspect-ratio: 3/2;
+    object-fit: cover; /* Shrinks vertical images to fit inside the 3/2 box without cropping */
+    overflow: hidden;
+    display: block;
 }
 
 .price-large {
